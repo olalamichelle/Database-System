@@ -67,15 +67,17 @@ Users or programs uses DML to query or modify the data. The actions are handled 
 ##### Transaction Processing
 Query 
 
---> **QUERY COMPLIER** --> query plan(sequence of actions the DBMS will perform to answer the query) 
+--> **QUERY COMPLIER** -->   query plan(sequence of actions the DBMS will perform to answer the query) 
 
---> **EXECUTION ENGINE** --> a sequence of index/file/record requests for small pieces of data (typically records or tuples of a table)
+--> **EXECUTION ENGINE** --> index/file/record requests (a sequence of requests for small pieces of data, typically records or tuples of a table)
 
---> **RESOURCE MANAGER** that knows about *data files(holding relations), the format and size of records in those file, and index file(help find elements of data files quickly*) --> page commands
+--> **RESOURCE MANAGER** --> page commands (index/file/record manager knows about *data files(holding relations), the format and size of records in those file, and index file(help find elements of data files quickly*) 
 
---> **BUFFER MANAGER** --> read/write pages('page' or 'disk block' is the unit of transfer between buffers and disk 
+--> **BUFFER MANAGER** -->   read/write pages('page' or 'disk block' is the unit of transfer between buffers and disk 
 
---> **STORAGE MANAGER** --> brings appropriate portions of the data from the secondary storage(disk) to the main-memory buffer so that the buffer manager can access it.
+--> **STORAGE MANAGER** --> brings appropriate portions of the data from 
+
+--> **the secondary storage(disk)** to the main-memory buffer so that the buffer manager can access it.
 
 
 
