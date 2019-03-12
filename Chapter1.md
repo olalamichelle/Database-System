@@ -42,10 +42,16 @@ Queries are written in a very HHL. SQL is the most important query language base
 ## Add OO features to relational model after 1990
 
 ## smaller and smaller systems
-### Large computer system to a single disk
+### 'Large computer system' to 'a single disk'
 Originally, DBMS's were large, expensive software system running on LARGE COMPUTER because to store a gigabyte of data required a LAGER COMPUTER SYSTEM. Today, hundreds of gigabytes fit on A SINGLE DISK, and it is quite feasible to run a DBMS on a personal computer. Thus, DB SYSTEMS based on relational model have become avilable even for small machines, and they are beginning to appear as a common tool for COMPUTER APPLICATIONS, much as spreadsheets did before them.
 
-### XML
+### A collection of XML documents 
 Another important trend is the use of documents using XML (eXtensible Modeling Language). Large collections of small documents can serve as a database. The methods of querying and manipulating them are different from those used in relational systems.
 
+## Information Integration and Data Warehouse
+### A old problem 
+Join information contained in many related database is troublesome caused by different DBMS or/and different structures for information. What's more, same term/attribute can mean differently (or different terms means the same thing) in different DBMS. To make things worse, the existance of legacy applications using each of these databases makes it almost impossible to scrap them.
 
+### Solutions:
+1. data warehouses: information from many legacy DB is copied periodically, with the appropriate translation, to a central DB.
+2. middleware: support an integrated model of the data of the various databases, while translating between this model and the actual models used by each DB.
