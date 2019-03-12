@@ -60,15 +60,30 @@ Join information contained in many related database is troublesome caused by dif
 ## 1.2 Overview of a DBMS
 
 ### Two Sources of Commands to DBMS:
-#### from User: people or programs that request or modify data 
+#### From User: people or programs that request or modify data 
+Users or programs uses DML to query or modify the data. The actions are handled by the following 2 separate subsystems.
+##### Answering the Query
+
+##### Transaction Processing
+Query --> QUERY COMPLIER --> query plan(sequence of actions the DBMS will perform to answer the query) 
+      --> EXECUTION ENGINE --> a sequence of requests for small pieces of data (typically records or tuples of a table)
+      --> RESOURCE MANAGER (index/file/record manager) that knows about **data files(holding relations), the format and size of records in those file, and index file(help find elements of data files quickly**) --> page commands/disk block commands(that request for data) 
+      --> BUFFER MANAGER --> read/write pages
+      --> STORAGE MANAGER --> brings appropriate portions of the data from the secondary storage(disk) to the main-memory buffer so that the buffer manager can access it.
+
+The 'page' or 'disk block' is the unit of transfer between buffers and disk 
 
 
-#### from DB Administrator(DBA): a person (or persons) responsible for the structure or schema of the DB
+
+
+#### From DB Administrator(DBA): a person (or persons) responsible for the structure or schema of the DB
 1. simpler to process
 2. DBA decide schema of the DB: 
 - relations/tables (*structure of BD*)
 - types and domains for attributes(*Constraints*)
-3. DBA needs special authoraity to execute *schema-altering commands(DDL)*
-4. DDL commands are parsed by a *DDL processor* and passed to the *execution engine*, which then goes through the *index/file/record manager* to alter the *metadata(schema information for the database)*
+3. DBA needs special authoraity to execute *'schema-altering commands(DDL)'*
+4. DDL commands are parsed by a *DDL processor* and passed to the *execution engine*, which then goes through the *index/file/record manager* to alter the *'metadata(schema information for the database)'*
+
+
 
 
