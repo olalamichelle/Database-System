@@ -3,9 +3,9 @@
 You: Request info from a website 
 Database of that website: serving the information you request
 
-database is empowered by DBMS or DB systems
+Database is empowered by DBMS or DB systems
 
-DBMS:
+## DBMS:
 	Create and preserve large amount of data over a long period of time
 	Manage data: update, insert, delete
 	More specifically, DBMS can:
@@ -23,9 +23,10 @@ This book teachs:
 	write program in various language associated with a DBMS
 	implement a DBMS
 
-
+## DB
 What is DB?
 a collection of information over a long period of time
 
+## Query
 What is a query?
 a database lingo for a question about the data
