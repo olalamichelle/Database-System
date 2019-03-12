@@ -19,10 +19,10 @@ More specifically, DBMS can:
 	* Atomicaity: without actions on the data to be performed partially but not completely
 
 
-## This book teachs: 
-design BD system
-write program in various language associated with a DBMS
-implement a DBMS
+## This book contains: 
+- design BD system
+- write program in various language associated with a DBMS
+- implement a DBMS
 
 ## What is DB?
 a collection of information over a long period of time
@@ -32,4 +32,20 @@ a database lingo for a question about the data
 
 ## Relational DB systems 
 Father: Ted codd in 1970
-He proposed that DBS should present the user with a view of data organized as table called *relations*.
+
+He proposed that DBS should present the user with a view of data organized as table called *relations*. Behind the scenes, there might be a complex data sturcture that allowed rapid responde to a variety of queries. 
+
+Unlike the programmers for earlier DBS, the programmers of a relational DBS would not be concerned with the storage structure.
+
+Queries are written in a very HHL. SQL is the most important query language based on the relational model.
+
+## Add OO features to relational model after 1990
+
+## smaller and smaller systems
+### Large computer system to a single disk
+Originally, DBMS's were large, expensive software system running on LARGE COMPUTER because to store a gigabyte of data required a LAGER COMPUTER SYSTEM. Today, hundreds of gigabytes fit on A SINGLE DISK, and it is quite feasible to run a DBMS on a personal computer. Thus, DB SYSTEMS based on relational model have become avilable even for small machines, and they are beginning to appear as a common tool for COMPUTER APPLICATIONS, much as spreadsheets did before them.
+
+### XML
+Another important trend is the use of documents using XML (eXtensible Modeling Language). Large collections of small documents can serve as a database. The methods of querying and manipulating them are different from those used in relational systems.
+
+
