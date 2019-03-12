@@ -8,8 +8,8 @@ Database is empowered by DBMS or DB systems
 ## DBMS:
 Create and preserve large amount of data over a long period of time
 Manage data: update, insert, delete
-	
-### More specifically, DBMS can:
+
+More specifically, DBMS can:
 - allow user to create new DB and specify their schemas using a specialized DDL
 - give user the ability to query the data and modify the data using an appropriate language often called a query language or DML
 - Support the storage of very large amount of data (terabytes or more) over a long period of time, allowing efficient access to the data for queries and database modifications
@@ -20,12 +20,16 @@ Manage data: update, insert, delete
 
 
 ## This book teachs: 
-	design BD system
-	write program in various language associated with a DBMS
-	implement a DBMS
+design BD system
+write program in various language associated with a DBMS
+implement a DBMS
 
 ## What is DB?
 a collection of information over a long period of time
 
 ## What is a query?
 a database lingo for a question about the data
+
+## Relational DB systems 
+Father: Ted codd in 1970
+He proposed that DBS should present the user with a view of data organized as table called *relations*.
