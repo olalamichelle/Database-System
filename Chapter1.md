@@ -68,7 +68,7 @@ Join information contained in many related database is troublesome caused by dif
 2. DBA decide schema of the DB: 
 - relations/tables (*structure of BD*)
 - types and domains for attributes(*Constraints*)
-3. DBA needs special authoraity to execute *schema-altering commands or DDL*
-4. DDL commands are parsed by a DDL processor and passed to the execution engine, which then goes through the index/file/record manager to alter the *metadata - schema information for the database*
+3. DBA needs special authoraity to execute *schema-altering commands(DDL)*
+4. DDL commands are parsed by a *DDL processor* and passed to the *execution engine*, which then goes through the *index/file/record manager* to alter the *metadata(schema information for the database)*
 
 
