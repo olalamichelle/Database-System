@@ -59,3 +59,16 @@ Join information contained in many related database is troublesome caused by dif
 
 ## 1.2 Overview of a DBMS
 
+### Two Sources of Commands to DBMS:
+#### from User: people or programs that request or modify data 
+
+
+#### from DB Administrator(DBA): a person (or persons) responsible for the structure or schema of the DB
+1. simpler to process
+2. DBA decide schema of the DB: 
+- relations/tables (*structure of BD*)
+- types and domains for attributes(*Constraints*)
+3. DBA needs special authoraity to execute *schema-altering commands or DDL*
+4. DDL commands are parsed by a DDL processor and passed to the execution engine, which then goes through the index/file/record manager to alter the *metadata - schema information for the database*
+
+
